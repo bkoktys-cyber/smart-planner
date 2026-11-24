@@ -1,0 +1,10 @@
+from fastapi import FastAPI
+
+
+
+app = FastAPI(title="Smart Planner API")
+
+
+@app.get("/api/health")
+def health():
+    return {"status": "ok"}
